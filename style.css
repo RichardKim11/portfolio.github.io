@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
 }
 
 body {
@@ -73,51 +77,53 @@ h2 {
 
 /* Uniform gallery thumbnails */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .thumb {
-    aspect-ratio: 16 / 10;
-    overflow: hidden;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    cursor: pointer;
-    background: #f4f4f4;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-  }
-  
-  .thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.35s ease;
-  }
-  
-  .thumb:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
-  }
-  
-  .thumb:hover img {
-    transform: scale(1.05);
-  }
-  
-  
-  
-  .gallery img {
-    width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-    cursor: pointer;
-  }
-  
-  .gallery img:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.thumb {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  background: #f4f4f4;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.thumb:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.thumb:hover img {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
 
 .placeholder {
   background: #f6f6f6;
@@ -135,7 +141,9 @@ form {
   max-width: 600px;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   padding: 0.8rem;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -161,54 +169,58 @@ footer {
 }
 
 .hidden {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: all 0.7s ease;
-  }
-  
-  .show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .card {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  }
-  
-  button {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  }
-  
-  .links a {
-    position: relative;
-  }
-  
-  .links a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background: #0070f3;
-    transition: width 0.25s ease;
-  }
-  
-  .links a:hover::after {
-    width: 100%;
-  }
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.7s ease;
+}
 
-  .about-container {
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+button {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.links a {
+  position: relative;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #0070f3;
+  transition: width 0.25s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.about-container {
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 3rem;
@@ -218,7 +230,7 @@ footer {
 .about-photo img {
   width: 100%;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   object-fit: cover;
 }
 
@@ -260,7 +272,7 @@ body.dark {
 }
 
 body.dark header {
-  background: rgba(15,17,21,0.8);
+  background: rgba(15, 17, 21, 0.8);
 }
 
 body.dark section {
@@ -285,33 +297,52 @@ body.dark textarea {
 }
 
 body.dark .lightbox {
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 2rem;
 }
 
 .thumb {
   width: 100%;
-  height: 180px;
+
+  aspect-ratio: 16 / 10;
+
   object-fit: cover;
-  border-radius: 10px;
+
+  border-radius: 16px;
+
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  background: #f4f4f4;
 }
 
 .thumb:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transform: translateY(-6px) scale(1.03);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
 }
 
+body.dark .thumb {
+  background: #161a22;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.55);
+}
 #lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.92);
+  background: rgba(0, 0, 0, 0.92);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,13 +361,19 @@ body.dark .lightbox {
   height: auto;
   object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 15px 60px rgba(0,0,0,0.7);
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.7);
   animation: zoomIn 0.25s ease;
 }
 
 @keyframes zoomIn {
-  from { transform: scale(0.96); opacity: 0 }
-  to   { transform: scale(1); opacity: 1 }
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 #close {
